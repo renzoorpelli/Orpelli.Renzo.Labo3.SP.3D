@@ -1,0 +1,42 @@
+table {
+    border-collapse: collapse;
+
+}
+
+th{
+    text-transform: capitalize;
+    background-color: grey;
+}
+
+th,td{
+    border: 1px solid black;
+    padding: 3px 5px;
+    word-wrap: break-word;
+
+}
+
+#divFormulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.divTabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gris{
+    background-color: #ccc;
+}
+.puntero {
+    cursor: pointer;
+
+}
+
+.puntero :hover{
+    background-color: grey;
+}

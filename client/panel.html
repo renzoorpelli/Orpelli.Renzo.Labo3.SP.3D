@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/navbarBS.css" />
+    <link rel="stylesheet" href="./css/imgStyle.css" />
+    <title>PANEL</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+          <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Parcial Mascotas </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#Nosotros"
+                    >Nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Anuncios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="jh-100 p-5 rounded-3 text-light  jumbotron">
+          <h1 class="display-2">Panel Administración</h1>
+          <hr class="txt-light">
+          <h4>Formulario alta mascotas</h1>
+        </div>
+      </div>
+      
+      <div id="divFormulario" class="container">
+        <fieldset>
+          <legend class="display-6">Información del anuncio</legend>
+          <hr>
+          <form>
+            <br />
+            <div class="mb-3">
+              <label for="idTitulo" class="form-label fw-bold">Título:</label>
+              <input
+                type="text"
+                placeholder="Titulo"
+                name="titulo"
+                id="idTitulo"
+                class="form-control"
+              />
+              <small class="text-danger"></small>
+            </div>
+            <div class="mb-3">
+              <label for="idDescripcion" class="form-label fw-bold">Descripción:</label>
+              <input
+                type="text"
+                name="descripcion"
+                id="idDescripcion"
+                placeholder="Descripcion"
+                class="form-control"
+              />
+              <small class="text-danger"></small>
+            </div>
+            <label for="animal" class="form-label fw-bold">Animal:</label>
+            <div class="mb-3">
+              <div class="form-check">
+                <div class="row">
+                  <div class="col-5 offset-md-3">
+                    <input
+                      type="radio"
+                      name="animal"
+                      id="idAnimal"
+                      value="PERRO"
+                      class="form-check-input"
+                    /> Perro</div>
+                  <div class="col">
+                    <input
+                    type="radio"
+                    name="animal"
+                    id="idAnimal"
+                    value="GATO"
+                    class="form-check-input"
+                    checked
+                  /> Gato</div>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="idPrecio" class="form-label fw-bold">Precio:</label>
+              <input
+                type="text"
+                name="precio"
+                id="idPrecio"
+                placeholder="Precio"
+                class="form-control"
+              />
+              <small class="text-danger"></small>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="raza" class="form-label fw-bold">Raza <i class="fa-solid fa-dog"></i></label>
+                  
+                  <input type="text" name="raza" id="idRaza" placeholder="Raza"  class="form-control" />
+                  <small class="text-danger"></small>
+                </div>
+              </div>
+              <div class="col">
+                <div class="mb-3">
+                  <label for="nacimiento" class="form-label fw-bold">Fecha de Nacimiento <i class="fa-solid fa-calendar-days"></i></label>
+                  
+                  <input type="date" name="nacimiento" id="idFecha"  class="form-control"/>
+                  <small class="text-danger"></small>
+                </div>
+    
+              </div>
+              <div class="col">
+                <div class="mb-3">
+                  <label for="vacunado" class="form-label fw-bold">Vacunado<i class="fa-solid fa-syringe"></i></label>
+                  
+                  <select
+                    name="vacunado"
+                    id="idVacuna"
+                    aria-placeholder="--ELEGIR--"
+                    class="form-select"
+                  >
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                  </select>
+                  <small class="text-danger"></small>
+                </div>
+              </div>
+            </div>
+            <small id="alertSubmit" class="text-danger"></small>
+            <button
+              id="btnGuardar"
+              class="btn btn-outline-success"
+              type="submit"
+            >
+              Guardar
+            </button>
+            <button id="btnBorrar" class="btn btn-outline-danger">
+              Eliminar
+            </button>
+            <button
+              id="btnCancelar"
+              class="btn btn-outline-warning"
+              type="reset"
+            >
+              Cancelar
+            </button>
+          </form>
+        </fieldset>
+      </div>
+
+
+      <div class="container">
+        <fieldset>
+        <div class="row">
+          <h1 class="display-6">Filtros</h1>
+          <hr>
+          <div class="col-md-6">
+            <label for="slcFiltro" class="form-label">Filtro</label>
+            <select id="slcFiltro" class="form-select" name="filtro">
+              <option value="todos" selected>Todos</option>
+              <option value="perro">Perro</option>
+              <option value="gato">Gato</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="txtPromedio" class="form-label">Promedio:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="txtPromedio"
+              name="promedio"
+              placeholder="Promedio"
+              disabled
+            />
+          </div>
+      </div>
+    </fieldset>
+      </div>
+
+      <div class="container">
+        <fieldset>
+          <div class="row">
+            <h1 class="display-6">Filtrar tabla</h1>
+            <hr>
+            <div class="col">
+              <label for=""></label>
+              <input type="checkbox" class="form-check-input selector" value="titulo" name="chkTitulo"  checked>
+              <label for="chkTitulo" class="form-check-label fw-bold" >Título</label>
+            </div>
+            <div class="col">
+              <input type="checkbox" class="form-check-input selector" value="animal" name="chkAnimal"  checked>
+              <label for="chkAnimal" class="form-check-label fw-bold" >Animal</label>
+            </div>
+            <div class="col">
+              <input type="checkbox" class="form-check-input selector" value="precio" name="chkPrecio"  checked>
+              <label for="chkPrecio" class="form-check-label fw-bold" >Precio</label>
+            </div>
+            <div class="col">
+              <input type="checkbox"  class="form-check-input selector" value="fechaNacimiento" name="chkFecha" checked>
+              <label for="chkFecha" class="form-check-label fw-bold" >Nacimiento</label>
+
+            </div>
+            <div class="col">
+              <input type="checkbox"  class="form-check-input selector" value="vacunado" name="chkVacunado"  checked>
+              <label for="chkVacunado" class="form-check-label fw-bold" >Vacunado</label>
+            </div>
+            <div class="col">
+              <input type="checkbox" class="form-check-input selector" value="raza" name="chkRaza"  checked>
+              <label for="chkRaza" class="form-check-label fw-bold" >Raza</label>
+            </div>
+            <div class="col">
+              <input type="checkbox" class="form-check-input  selector"  value="descripcion" name="chkDescripcion"  checked>
+              <label for="chkDescripcion" class="form-check-label fw-bold" >Descripción</label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="container">
+        <div  id="spinner"></div>  
+    </div>
+
+      <div class="container">
+        <fieldset>
+        <h2 class="display-6">Animales registrados</h2>
+        <hr>
+        <div class="divTabla"></div>
+      </fieldset>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Parcial Mascotas</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#Nosotros"
+                    >Nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Anuncios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </footer>
+    <script src="./js/app.js" type="module"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

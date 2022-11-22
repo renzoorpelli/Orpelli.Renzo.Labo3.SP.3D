@@ -1,0 +1,26 @@
+.jumbotron {
+    background-image: url(../img/header.png);
+    background-size: cover;
+}
+
+fieldset{
+    padding: 30px 40px;
+    margin: 30px;
+    background-color: rgb(223, 223, 223);
+}
+
+
+/* pone mayuscula la primer letra de la palabra de los thead */
+tr > th {
+    text-transform: capitalize;
+}
+
+
+.escondido {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+

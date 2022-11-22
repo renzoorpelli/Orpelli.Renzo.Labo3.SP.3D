@@ -1,0 +1,9 @@
+.card-header {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.card-footer {
+    text-transform: capitalize;
+    font-weight: bold;
+}

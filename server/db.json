@@ -1,0 +1,34 @@
+{
+  "perros": [
+    {
+      "titulo": "Pocho",
+      "animal": "PERRO",
+      "descripcion": "manso",
+      "precio": "222",
+      "fechaNacimiento": "2022-11-04",
+      "vacunado": "si",
+      "raza": "caniche",
+      "id": 1
+    },
+    {
+      "titulo": "Juancito",
+      "animal": "PERRO",
+      "descripcion": "se porta masomenos",
+      "precio": "222",
+      "fechaNacimiento": "2022-11-03",
+      "vacunado": "si",
+      "raza": "n/a",
+      "id": 2
+    },
+    {
+      "titulo": "Minguito",
+      "animal": "GATO",
+      "descripcion": "se porta bastante bien",
+      "precio": "1200",
+      "fechaNacimiento": "2022-11-10",
+      "vacunado": "si",
+      "raza": "garfield",
+      "id": 3
+    }
+  ]
+}
